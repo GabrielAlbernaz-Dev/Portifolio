@@ -1,0 +1,138 @@
+/**** Utilities ****/
+.container {
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.shadow-default {
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.ovf-hidden {
+    overflow: hidden;
+}
+
+.m-default {
+    margin: 12rem 0rem 6rem 0rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.button-group {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+/**** Components ****/
+.button {
+    max-width: 18rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 1.2rem;
+    font-weight: 600;
+    border-radius: 6px;
+    background: var(--primary);
+    font-size: 1.6rem;
+    color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: .2s;
+    font-family: 'Inter', sans-serif; 
+}
+
+.button:hover {
+    background: var(--primary-hover);
+    color: var(--light);
+    transform: scale(1.03)
+}
+
+.button-cta {
+    max-width: 20rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 1.4rem 2.2rem;
+    font-weight: 600;
+    border-radius: 6px;
+    background: var(--primary);
+    font-size: 2rem;
+    color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: .2s;
+    font-family: 'Inter', sans-serif; 
+}
+
+.button-cta:hover {
+    background: var(--primary-hover);
+    color: var(--light);
+    transform: scale(1.03)
+}
+
+.logo {
+    display: flex;
+    padding: 1.4rem 2rem;
+    justify-content:center;
+    align-items:center;
+    background:transparent;
+    border: 2px solid var(--primary);
+    border-radius: 60%;
+    transition: .2s;
+    background: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.logo h2 {
+    color: var(--light);
+    font-size: 2.2rem;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.title-section {
+    display: grid;
+    gap:.8rem;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.title-section:not(#about .title-section) {
+    padding-bottom: 3.5rem;
+}
+
+.title-section span {
+    color: var(--primary);
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.title-section h2 {
+    color: var(--light);
+    font-size: 3.2rem;
+    position: relative;
+}
+
+.title-section .line {
+    width:90%;
+    height: 1px;
+    background: var(--text);
+}

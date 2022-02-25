@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary:#4274f5;
+    --primary-hover:#29499b;
+    --background:#1B212C;
+    --secondary:#10141B;
+    --light:#fff;
+    --dark:#222;
+    --text:#8892B0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Inter', sans-serif; 
+}
+
+a,span {
+    font-family: 'Ubuntu Mono', monospace;
+}

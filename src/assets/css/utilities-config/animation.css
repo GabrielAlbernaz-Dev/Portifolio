@@ -1,0 +1,94 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* @keyframes loading {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-40px);
+    }
+
+    100% {
+    transform: translatey(0px);
+    }
+} */
+
+@keyframes loading {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform:translateX(-3000px);
+    }
+
+    to {
+        opacity: 1;
+        transform:translateX(0px);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform:translateX(3000px);
+    }
+
+    to {
+        opacity: 1;
+        transform:translateX(0px);
+    }
+}
+
+@keyframes fadeCard {
+    from {
+        opacity: 0;
+        transform:translateX(3000px);
+    }
+
+    to {
+        opacity: 1;
+        transform:translateX(0px);
+    }
+}
+

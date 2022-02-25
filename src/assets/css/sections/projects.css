@@ -1,0 +1,145 @@
+#projects {
+  visibility: hidden;
+}
+
+#projects.active {
+  visibility: visible;
+}
+
+#projects .swiper {
+  width: 100%;
+  min-height: 30rem;
+  max-height: 50rem;
+  opacity: 0;
+}
+
+#projects.active .swiper {
+  animation: fadeLeft 1.2s forwards ease-in;
+}
+
+#projects .swiper-slide {
+  padding: 3.5rem 0;
+  height: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  background: var(--secondary);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+#projects .swiper-slide .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.swiper-slide .container .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(-1000px);
+  transition: 0.4s ease;
+}
+
+.swiper-slide .container .content h2 {
+  color: var(--light);
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.swiper-slide .container .content p {
+  font-size: 1.6rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+.swiper-slide .container .content .button-cta {
+  font-size: 1.6rem;
+  padding: 1.2rem 3rem;
+}
+
+.swiper-slide .container .content .button-cta.github {
+  background: var(--light);
+  color: var(--dark);
+}
+
+.swiper-slide .container .content .button-cta span {
+  margin-right: 1rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.swiper-slide .container:hover img {
+  filter: blur(10px) brightness(20%);
+}
+
+.swiper-slide .container:hover .content {
+  transform: translateY(0);
+}
+
+.swiper-pagination {
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.swiper-pagination-bullet {
+  padding: 1rem;
+  background: var(--primary) !important;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+#projects .swiper-slide ul.stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  gap: 1.5rem;
+}
+
+#projects .swiper-slide ul.stack li {
+  background: var(--primary);
+  color: var(--light);
+  padding: .8rem 2.2rem;
+  border-radius: 100px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}

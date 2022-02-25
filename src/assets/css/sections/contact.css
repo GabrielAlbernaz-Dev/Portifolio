@@ -1,0 +1,71 @@
+section#contact {
+    margin: 12rem 0rem 6rem 0rem;
+    visibility: hidden;
+}
+
+section#contact.active {
+    visibility: visible;
+    animation: fadeLeft 1s ease-in;
+}
+
+section#contact.active form {
+    animation: fadeLeft 1s forwards;
+}
+
+section#contact form {
+    min-width: 40rem;
+    background: var(--secondary);
+    padding: 2.8rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    opacity: 0;
+}
+
+section#contact form .contact-title  {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: var(--light);
+    text-shadow: 2px 4px 8px rgba(0, 0, 0,0.6);
+}
+
+section#contact form .form-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section#contact form .form-input-group input,
+section#contact form .form-input-group textarea {
+    font-size: 1.6rem;
+    color: var(--light);
+    font-weight:600;
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid var(--light);
+    border-radius: 8px;
+    transition: .2s;
+}
+
+section#contact form .form-input-group input:focus,
+section#contact form .form-input-group textarea:focus {
+    box-shadow: #4275f59a 0px 4px 10px, #4275f59a  0px 8px 10px, #4275f59a  0px 8px 30px;
+    transform: translateY(-4px);
+    outline: none;
+}
+
+section#contact form .form-input-group button[type="submit"] {
+    padding: 1.2rem;
+    background: var(--primary);
+    background: linear-gradient(to right,var(--primary), var(--primary-hover));
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 8px;
+    color: var(--light);
+    cursor: pointer;
+    transition: .3s;
+}
+
+section#contact form .form-input-group button[type="submit"]:hover {
+    background: linear-gradient(to right,var(--primary-hover), var(--primary-hover));
+    letter-spacing:1px;
+}

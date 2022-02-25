@@ -1,0 +1,82 @@
+header.main-header {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+header.main-header.active {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: var(--secondary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    animation: fadeIn .3s forwards;
+}
+
+header.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header.main-header .container  nav.top-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+header.main-header .container nav.top-nav ul li {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+header.main-header .container nav.top-nav ul li span {
+    color: var(--primary);
+}
+
+header.main-header .container nav.top-nav ul li a {
+    display: inline-block;
+    color: var(--light);
+    transition: .2s;
+}
+
+header.main-header .container nav.top-nav ul li a:hover:not(.button) {
+    color: var(--primary);
+    transform: scale(0.99);
+}
+
+header.main-header .container nav.top-nav .bars {
+    display: none;
+    z-index: 102;
+    flex-direction: column;
+    gap: .5rem;
+}
+header.main-header .container nav.top-nav .bars.active {
+    position:absolute;
+    top: 5rem;
+    right: 2rem;
+    margin:0;
+}
+
+header.main-header .container nav.top-nav .bars span {
+    display: block;
+    width: 3rem;
+    height: .4rem;
+    font-size: 2rem;
+    background-color: var(--light);
+    transition: all .3s ease-in;
+    margin: .5rem 0;
+}
+
+header.main-header .container nav.top-nav .bars.active span:nth-child(1) {
+    transform: translateY(-4px) rotate(45deg);
+}
+
+header.main-header .container nav.top-nav .bars.active span:nth-child(2) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+
+header.main-header .container nav.top-nav .bars.active span:nth-child(3) {
+    opacity: 0;
+}

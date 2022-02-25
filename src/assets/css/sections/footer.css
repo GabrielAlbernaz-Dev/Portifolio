@@ -1,0 +1,12 @@
+footer {
+    width: 100%;
+    background: var(--secondary);
+    padding: 3rem 0rem;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.8rem;
+    color: var(--light);
+    font-weight: 500;
+}
