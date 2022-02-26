@@ -15,7 +15,7 @@ const sectionScroll = document.querySelectorAll(".scroll")
 function activeScroll() {
     sectionScroll.forEach((section)=>{
         const sectionTop = section.getBoundingClientRect().top
-        if(window.scrollY >= sectionTop) {
+        if(window.scrollY > sectionTop) {
             section.classList.add("active")
         } 
         // else {
