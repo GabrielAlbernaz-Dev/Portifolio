@@ -123,6 +123,14 @@
     .grid-2 {
         grid-template-columns: 1fr;
     }
+
+    main.container .content section#experience .container-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    main.container .content section#experience .container-tabs .tabs ul {
+        display: flex;
+    }
 }
 
 @media screen and (max-width:420px) {

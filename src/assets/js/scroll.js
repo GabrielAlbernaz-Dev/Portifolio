@@ -2,7 +2,7 @@ import {mobileClose,headerNav,hamburgerIcon} from "../js/header.js"
 
 const headerNavbar = document.querySelector("header.main-header")
 function scrollNav() {
-    if(window.scrollY >= 80) {
+    if(window.scrollY >= 10) {
         headerNavbar.classList.add("active")
     } else {
         headerNavbar.classList.remove("active")
