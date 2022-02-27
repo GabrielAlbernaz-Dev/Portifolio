@@ -47,7 +47,7 @@ main.container .content section#about .text-content p {
 main.container .content section#about .text-content .stack {
     color: var(--primary);
     font-weight: 700;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+    font-family: 'Inter', sans-serif;
 }
 
 main.container .content section#about .img-content img {
