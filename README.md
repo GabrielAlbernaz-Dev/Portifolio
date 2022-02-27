@@ -10,6 +10,7 @@
 
 <h2>Demo:
   <span><a href="https://github.com/GabrielAlbernaz-Dev/portifolio">https://gabrielalbernaz-dev.github.io/portifolio/</a></span>
+  https://gabrielalbernaz-dev.github.io/portifolio/
 </h2>
 
 <h2>Dependencies</h2>
