@@ -12,7 +12,7 @@
   <span><a href="https://github.com/GabrielAlbernaz-Dev/portifolio" target="_blank">https://gabrielalbernaz-dev.github.io/portifolio/</a></span>
 </h2>
 
-<h2>Dependecies</h2>
+<h2>Dependencies</h2>
  <ul>
    <li>Google Fonts</li>
    <li>Font Awesome</li>
