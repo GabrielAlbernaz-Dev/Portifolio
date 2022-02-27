@@ -1,21 +1,9 @@
-#projects {
-  visibility: hidden;
-}
-
-#projects.active {
-  visibility: visible;
-}
-
 #projects .swiper {
   width: 100%;
   min-height: 30rem;
   max-height: 50rem;
-  opacity: 0;
 }
 
-#projects.active .swiper {
-  animation: fadeLeft 1.2s forwards ease-in;
-}
 
 #projects .swiper-slide {
   padding: 3.5rem 0;
