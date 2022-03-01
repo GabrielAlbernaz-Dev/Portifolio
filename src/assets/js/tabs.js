@@ -1,7 +1,6 @@
 const tabs = document.querySelectorAll(".tabs li")
 const contentTabs = document.querySelectorAll(".content-tabs .content")
 
-
 function initTabs(tab,content) {
     tab[0].classList.add("active")
     content[0].classList.add("active")

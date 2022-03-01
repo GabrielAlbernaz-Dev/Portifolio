@@ -42,7 +42,7 @@ main.container .content section#experience .container-tabs .content-tabs .conten
 
 main.container .content section#experience .container-tabs .content-tabs .content.active {
     display: block;
-    animation: fadeLeft .3s ease-in;
+    animation: fadeInUp .3s ease-in-out;
 }
 
 main.container .content section#experience .container-tabs .content-tabs .content h3 {
