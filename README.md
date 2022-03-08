@@ -1,5 +1,5 @@
-<h1>Portifolio</h1>
-<p>My personal portifolio</p>
+<h1>Portfolio</h1>
+<p>My personal portfolio</p>
 
 <h2>This website was built with:</h2>
   <ul>
