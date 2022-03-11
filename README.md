@@ -9,7 +9,7 @@
   </ul>
 
 <h2>Demo:
-  <span> https://gabrielalbernaz-dev.github.io/portifolio/</span>
+  <span> https://gabrielalbernaz-dev.github.io/portfolio/</span>
 </h2>
 
 <h2>Dependencies</h2>
