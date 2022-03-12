@@ -1,5 +1,5 @@
-<h1>Portifolio</h1>
-<p>My personal portifolio</p>
+<h1>Portfolio</h1>
+<p>My personal portfolio</p>
 
 <h2>This website was built with:</h2>
   <ul>
@@ -9,7 +9,7 @@
   </ul>
 
 <h2>Demo:
-  <span> https://gabrielalbernaz-dev.github.io/portifolio/</span>
+  <span> https://gabrielalbernaz-dev.github.io/portfolio/</span>
 </h2>
 
 <h2>Dependencies</h2>
