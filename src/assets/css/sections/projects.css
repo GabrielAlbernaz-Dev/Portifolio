@@ -1,46 +1,35 @@
 #projects .swiper {
   width: 100%;
+  height: 100%;
   min-height: 30rem;
   max-height: 50rem;
+  padding: 1.6rem;
+  background: var(--secondary);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 8px;
 }
 
 
 #projects .swiper-slide {
-  padding: 3.5rem 0;
-  height: 100%;
-  text-align: center;
-  font-size: 1.8rem;
-  background: var(--secondary);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  border-radius: 8px;
   position: relative;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 8px;
 }
 
-#projects .swiper-slide .container {
-  position: absolute;
+#projects .swiper-slide .project-content {
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transition: 0.3s;
   overflow: hidden;
+  cursor: pointer;
 }
 
-.swiper-slide .container .content {
+#projects .swiper-slide .project-content .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -57,63 +46,25 @@
   transition: 0.4s ease;
 }
 
-.swiper-slide .container .content h2 {
+#projects .swiper-slide .project-content:hover .content {
+  transform: translateY(0px);
+}
+
+#projects .swiper-slide .project-content .content h2 {
   color: var(--light);
   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
   font-size: 3rem;
   font-weight: 600;
 }
 
-.swiper-slide .container .content p {
+#projects .swiper-slide .project-content .content p {
   font-size: 1.6rem;
   max-width: 70rem;
   margin: 0 auto;
   color: var(--text);
 }
 
-.swiper-slide .container .content .button-cta {
-  font-size: 1.6rem;
-  padding: 1.2rem 3rem;
-}
-
-.swiper-slide .container .content .button-cta.github {
-  background: var(--light);
-  color: var(--dark);
-}
-
-.swiper-slide .container .content .button-cta span {
-  margin-right: 1rem;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.swiper-slide .container:hover img {
-  filter: blur(10px) brightness(20%);
-}
-
-.swiper-slide .container:hover .content {
-  transform: translateY(0);
-}
-
-.swiper-pagination {
-  background: var(--secondary);
-  padding: 1rem;
-  border-radius: 8px 0px 0px 8px;
-}
-
-.swiper-pagination-bullet {
-  padding: 1rem;
-  background: var(--primary) !important;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
-}
-
-#projects .swiper-slide ul.stack {
+#projects .swiper-slide .project-content ul.stack {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -121,7 +72,7 @@
   gap: 1.5rem;
 }
 
-#projects .swiper-slide ul.stack li {
+#projects .swiper-slide .project-content ul.stack li {
   background: var(--primary);
   color: var(--light);
   padding: .8rem 2.2rem;
@@ -130,4 +81,48 @@
   font-weight: 600;
   letter-spacing: 1px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#projects .swiper-slide .project-content .content .button-cta {
+  font-size: 1.6rem;
+  padding: 1.2rem 3rem;
+}
+
+#projects .swiper-slide .project-content .content .button-cta.github {
+  background: var(--light);
+  color: var(--dark);
+}
+
+#projects .swiper-slide .project-content .content .button-cta span {
+  margin-right: 1rem;
+}
+
+#projects .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+#projects .swiper-slide .project-content:hover img {
+  filter: brightness(40%) blur(5px);
+}
+
+#projects .swiper-slide {
+  width: 60%;
+}
+
+#projects .swiper-pagination-bullet {
+  padding: .8rem;
+  background: var(--light) !important;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+#projects .swiper-pagination-horizontal {
+  padding: .6rem 0;
+  background: var(--primary);
+  bottom: 0px;
 }

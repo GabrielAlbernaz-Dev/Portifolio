@@ -6,7 +6,7 @@ slides.forEach((slide) => {
     }
 
     function playSlide() {
-        swiper.autoplay.play()
+        swiper.autoplay.start()
     }
 
     slide.addEventListener("mouseenter",stopSlide)
