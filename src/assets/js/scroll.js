@@ -1,4 +1,4 @@
-import {mobileClose,headerNav,hamburgerIcon} from "../js/header.js"
+import {mobileCloseCLE} from "../js/header.js"
 
 const headerNavbar = document.querySelector("header.main-header")
 function scrollNav() {
@@ -18,15 +18,11 @@ function activeScroll() {
         if(window.scrollY > sectionTop) {
             section.classList.add("active")
         } 
-        // else {
-        //     section.classList.remove("active")
-        // }
     })
 }
 window.addEventListener("scroll",activeScroll)
 
 const sectionLinksNav = document.querySelectorAll("a[href^='#']")
-console.log(sectionLinksNav)
 function scrollToSection(e) {
     mobileClose()
     e.preventDefault()

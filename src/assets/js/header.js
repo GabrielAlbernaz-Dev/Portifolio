@@ -22,8 +22,6 @@ export function mobileClose(){
         })
         document.body.classList.remove("ovf-hidden")
     }
-
-    console.log()
 }
 
 hamburgerIcon.addEventListener("click",mobileOpen)
