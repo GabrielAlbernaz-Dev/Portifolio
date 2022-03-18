@@ -1,4 +1,4 @@
-import {mobileCloseCLE} from "../js/header.js"
+import {mobileClose} from "../js/header.js"
 
 const headerNavbar = document.querySelector("header.main-header")
 function scrollNav() {
@@ -9,7 +9,6 @@ function scrollNav() {
     }
 }
 window.addEventListener("scroll", scrollNav)
-
 
 const sectionScroll = document.querySelectorAll(".scroll")
 function activeScroll() {
