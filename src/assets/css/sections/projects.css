@@ -129,5 +129,6 @@
 #projects .swiper,
 #projects .swiper-slide,
 #projects .swiper-slide img {
-  min-height:60rem;
+  min-height:50rem;
+  max-height:50rem;
 }
