@@ -1,6 +1,8 @@
 import {mobileClose} from "../js/header.js"
 
 const headerNavbar = document.querySelector("header.main-header")
+const aboutSection = document.querySelector("section#about")
+
 function scrollNav() {
     if(window.scrollY >= 10) {
         headerNavbar.classList.add("active")
@@ -10,12 +12,14 @@ function scrollNav() {
 }
 window.addEventListener("scroll", scrollNav)
 
-const sectionScroll = document.querySelectorAll(".scroll")
+const sectionScroll = document.getElementsByClassName("scroll")
 function activeScroll() {
-    sectionScroll.forEach((section)=>{
+    [...sectionScroll].forEach((section)=>{
         const sectionTop = section.getBoundingClientRect().top
         if(window.scrollY > sectionTop) {
             section.classList.add("active")
+        } else if (window.matchMedia("(max-width: 1400px)").matches) {
+            aboutSection.classList.add("scroll")
         } 
     })
 }
