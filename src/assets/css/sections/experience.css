@@ -95,6 +95,10 @@ main.container .content section#experience .container-tabs .content-tabs .conten
     color: var(--text);
 }
 
+main.container .content section#experience .container-tabs .content-tabs .content ul li svg {
+    margin: 0 1rem;
+}
+
 main.container .content section#experience .container-tabs .content-tabs .content ul li i {
     color: var(--primary);
     margin-right: 1rem;
