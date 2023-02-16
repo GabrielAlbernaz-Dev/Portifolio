@@ -10,7 +10,7 @@ main.container .content section#experience.active {
 main.container .content section#experience .container-tabs {
     display: grid;
     justify-content:center;
-    grid-template-columns: 1fr 4.5fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 main.container .content section#experience .container-tabs .tabs ul li {
