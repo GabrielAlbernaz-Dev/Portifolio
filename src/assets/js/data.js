@@ -1,7 +1,8 @@
-const experienceContainerTabs = document.querySelector('.container-tabs .tabs ul')
-const experienceContentTabs = document.querySelector('.content-tabs')
+export const personalData = {
+    presentationText:'Atuo como Web Designer e Desenvolvedor Front End, busco desenvolver experiências digitais excepcionais. Atualmente, estou focado na construção de websites interativos que buscam atingir altas expectativas dos usuários.',
+};
 
-const experiences = [
+export const experiencesData = [
     {
     
         role: 'Desenvolvedor Full Stack',
@@ -95,32 +96,41 @@ const experiences = [
     }
 ];
 
-const tabsHTML = experiences.map(experience => {
-    return `
-    <li>${experience.company}</li>
-    `
-}).join('').trim('')
-
-const contentTabsHTML = experiences.map(experience => {
-    const experienceServicesLis = experience.services.map(service =>
-        `<li>
-        <i class="fa-solid fa-play"></i>
-        ${service}
-    </li>`).join('').trim('')
-
-    const experienceStackIcons = experience.stackIcons.map(icon => icon).join('').trim('')
-
-    return `
-    <div class="content">
-        <h3>${experience.role}<span><a href="${experience.link}" target="_blank"> ${experience.company}</a></span></h3>
-        <p class="date">${experience.date}</p>
-        <ul>
-        ${experienceServicesLis}
-        <li>${experienceStackIcons}</li>
-        </ul>
-    </div>
-    `
-}).join('').trim('')
-
-experienceContainerTabs.insertAdjacentHTML('afterbegin', tabsHTML)
-experienceContentTabs.insertAdjacentHTML('afterbegin', contentTabsHTML)
+export const projectsData = [
+    {
+        title:'AniScope',
+        description:'Aniscope é um aplicativo sobre animais que oferece fatos interessantes, imagens incríveis e quizzes divertidos. Aprenda mais sobre o mundo animal enquanto se diverte com nosso aplicativo!',
+        stack:['HTML','CSS','CSS modules','React'],
+        githubLink:'https://github.com/GabrielAlbernaz-Dev/AniScope',
+        projectSource:'https://ani-scope.vercel.app/',
+        imageSource:'./src/assets/img/aniscope-bg.png',
+        imageAlt:'AniScope App'
+    },
+    {
+        title:'LFCARE',
+        description:'Landing page focada em serviços clinicos. Uma simples página estática, sendo desenvolvido utilizado diversos recursos das tecnologias Html,Css,Javascript',
+        stack:['HTML','CSS','Javascript'],
+        githubLink:'https://github.com/GabrielAlbernaz-Dev/LFcare',
+        projectSource:'https://gabrielalbernaz-dev.github.io/LFcare/',
+        imageSource:'./src/assets/img/Landing LFcare.png',
+        imageAlt:'Lfcare Page Image'
+    },
+    {
+        title:'JIMO',
+        description:'Jimo é uma aplicação da lista de tarefas, mais comumente conhecida como Lista de Tarefas. Com o Jimo, podemos criar, alterar, apagar e completar tarefas com facilidade.',
+        stack:['HTML','CSS','Javascript','PHP'],
+        githubLink:'https://github.com/GabrielAlbernaz-Dev/jimo',
+        projectSource:'',
+        imageSource:'./src/assets/img/jimo.png',
+        imageAlt:'Jimo App'
+    },
+    {
+        title:'DeathNoteAPI',
+        description:'Uma api simples do anime Death Note',
+        stack:['NodeJS','Express','MongoDB','Mongoose'],
+        githubLink:'https://github.com/GabrielAlbernaz-Dev/DeathNoteAPI',
+        projectSource:'',
+        imageSource:'./src/assets/img/deathnoteapi.png',
+        imageAlt:'DeathNoteAPI Image',
+    }
+];
